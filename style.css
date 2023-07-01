@@ -43,7 +43,9 @@ main{
 }
 
 .card-contact li{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
 }
 
