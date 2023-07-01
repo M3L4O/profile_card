@@ -48,7 +48,7 @@ img.gun{
     position: absolute;
     width: 2.5rem;
     height: 2.5rem;
-    right: 49%;
+    right: 48%;
     top: 30%;
     animation: orbit 5s linear infinite
 }
