@@ -35,25 +35,48 @@ main{
     opacity: 80%;
 }
 
-.card-header img{
+.card-img img{
     position: relative;
     margin-top: 1rem;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-}
-.card-header img:hover{
-    animation:jello-horizontal .9s both
+    animation: none;
 }
 
-@keyframes jello-horizontal{
-    0%{transform:scale3d(1,1,1)}
-    30%{transform:scale3d(1.25,.75,1)}40%
-    {transform:scale3d(.75,1.25,1)}
-    50%{transform:scale3d(1.15,.85,1)}
-    65%{transform:scale3d(.95,1.05,1)}
-    75%{transform:scale3d(1.05,.95,1)}
-    100%{transform:scale3d(1,1,1)}
+img.gun{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 49%;
+    top: 30%;
+    animation: orbit 5s linear infinite
+}
+
+img.gun:nth-child(1){
+    animation-delay: 0s;
+}
+img.gun:nth-child(2){
+    animation-delay: -1s;
+}
+img.gun:nth-child(3){
+    animation-delay: -2s;
+}
+img.gun:nth-child(4){
+    animation-delay: -3s;
+}
+img.gun:nth-child(5){
+    animation-delay: -4s;
+}
+
+/* faça as imagens não se sobreporem ga classe gun */
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(10rem) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(10rem) rotate(-360deg);
+    }  
 }
 
 
