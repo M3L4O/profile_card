@@ -32,7 +32,7 @@ main{
     align-items: center;
     text-align: center;
     box-shadow: 10px 10px 30px #11111b;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .card-img img{
@@ -41,7 +41,6 @@ main{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    animation: none;
 }
 
 img.gun{
@@ -50,6 +49,7 @@ img.gun{
     height: 2.5rem;
     right: 48%;
     top: 30%;
+    box-shadow: 5px 5px 30px 10px #11111b;
     animation: orbit 5s linear infinite
 }
 
@@ -69,7 +69,6 @@ img.gun:nth-child(5){
     animation-delay: -4s;
 }
 
-/* faça as imagens não se sobreporem ga classe gun */
 @keyframes orbit {
     from {
         transform: rotate(0deg) translateX(10rem) rotate(0deg);
@@ -78,7 +77,6 @@ img.gun:nth-child(5){
         transform: rotate(360deg) translateX(10rem) rotate(-360deg);
     }  
 }
-
 
 .card-contact li{
     display: flex;
